@@ -1,0 +1,290 @@
+:root {
+  --textColor: #fff;
+  --mainColor: #191b4b;
+  --backGroundColor: #30338a;
+  --bcolor: #00aeef;
+  --mainfont: "Cairo", sans-serif;
+}
+*,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+body {
+  background-color: var(--backGroundColor);
+  direction: rtl;
+}
+header {
+  position: absolute;
+  width: 100%;
+}
+header .cont {
+  margin: 0% 7%;
+}
+header #dropdownMenuButton1 {
+  border: 2px solid var(--textColor);
+  border-radius: 0;
+  color: var(--textColor);
+  font-family: var(--mainfont);
+  font-size: 23px;
+  width: 198px;
+  height: 70px;
+}
+.btn2 {
+  background-color: var(--bcolor);
+  color: var(--textColor);
+  font-family: var(--mainfont);
+  font-size: 23px;
+  width: 198px;
+  height: 65px;
+  outline: 0px solid var(--bcolor);
+  border: 2px solid var(--bcolor);
+  border-radius: 0;
+}
+.hero {
+  text-align: center;
+  height: 100vh;
+  color: var(--textColor);
+  background-image: url(../image/8d2ca1d37baff57b0c0d2944da8e42aa.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: back 30s ease-in infinite normal;
+  font-family: var(--mainfont);
+}
+@keyframes back {
+  0% {
+    background-image: url(../image/5730894c28bc7469aed02ead47ce93d6.jpg);
+  }
+  20% {
+    background-image: url(../image/30oY2z.webp);
+  }
+  40% {
+    background-image: url(../image/tom-and-jerry-2f5fbl2k3wwi31aq.jpg);
+  }
+  60% {
+    background-image: url(../image/wp3867588.webp);
+  }
+  80% {
+    background-image: url(../image/desktop-wallpaper-one-piece-kid-luffy-zoro-usopp-nami-and-sanji-one-piece-kid.jpg);
+  }
+  100% {
+    background-image: url(../image/5730894c28bc7469aed02ead47ce93d6.jpg);
+  }
+}
+.overlay {
+  height: 100vh;
+  background-image: linear-gradient(#191b4b, #00000067 60%, #191b4b);
+}
+
+.cen h1 {
+  font-size: 82px;
+  font-weight: bold;
+}
+.cen p {
+  font-size: 47px;
+}
+.inp input {
+  height: 50px;
+  width: 520px;
+  border-radius: 0%;
+  outline: 0;
+  margin: 0;
+  /* outline-offset: 0; */
+  outline-width: 0;
+}
+
+.inp button {
+  color: var(--textColor);
+  border-radius: 0;
+  height: 48px;
+  width: 70px;
+  margin: 0;
+}
+.cen i {
+  margin: 3% 0% 0% 0%;
+  font-size: 35px;
+  position: relative;
+  top: 0px;
+  animation: mvup 1.5s linear infinite alternate;
+}
+@keyframes mvup {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 15px;
+  }
+}
+section:not(.hero) {
+  background-color: var(--mainColor);
+  margin: 0px 0px 20px 0px;
+  height: 800px;
+}
+/* .sec2{
+  margin-top: 0px; !important;
+} */
+.write {
+  color: var(--textColor);
+  font-family: var(--mainfont);
+}
+/* .container {
+  margin-top: 0px;
+} */
+
+.write h2 {
+  font-weight: bold;
+  font-size: 92px;
+}
+.write p {
+  font-size: 36px;
+}
+#imggy {
+  width: 450px;
+  position: relative;
+  right: 0px;
+  animation: mvrit 2s linear infinite alternate;
+}
+#plaf {
+  width: 350px;
+  position: relative;
+  right: 0px;
+  animation: mvrit 2s linear infinite alternate;
+}
+@keyframes mvrit {
+  0% {
+    right: 40px;
+  }
+  50% {
+    right: 0px;
+  }
+  100% {
+    right: -40px;
+  }
+}
+.sec3 .container .title {
+  text-align: center;
+  color: var(--textColor);
+  padding-bottom: 5px;
+  font-size: px;
+}
+.hover {
+  --c: #1095c1; /* the color */
+  --s: 0.15em;
+
+  line-height: 5px;
+  padding-bottom: calc(2.1 * var(--s));
+  background: conic-gradient(from 135deg at top, var(--c) 90deg, #0000 0) left 0
+      bottom var(--s) / calc(2 * var(--s)) var(--s) repeat-x,
+    conic-gradient(from -45deg at bottom, var(--c) 90deg, #0000 0) left var(--s)
+      bottom 0 / calc(2 * var(--s)) var(--s) repeat-x;
+  -webkit-mask: linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0) 0 / var(--_p, 0%) padding-box no-repeat;
+  transition: 0.5s;
+}
+.hover:hover {
+  --_p: 100%;
+  color: var(--c);
+}
+.crsu {
+  height: 50px;
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 675px;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 4.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+}
+
+#secondd {
+  position: absolute;
+  right: 15%;
+  bottom: 9.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+}
+#sec44 {
+  color: var(--textColor);
+  font-family: var(--mainfont);
+  font-size: 60px;
+  margin-top: 70px;
+}
+.accordion-item {
+  background-color: #202254;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.accordion-body {
+  padding: 1rem 1.25rem;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: var(--mainfont);
+}
+.accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-size: 25px;
+  color: #ffffff;
+  text-align: left;
+  background-color: #202254;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  font-family: var(--mainfont);
+}
+.accordion-button:not(.collapsed) {
+  color: #0c63e4;
+  background-color: #202254;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+ 
+}
+
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+.fly {
+  position: fixed;
+  top: 90%;
+  left: 96%;
+  width: 50px;
+  height: 50px;
+  z-index: 4;
+}
+.fly button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 35px;
+  color: white;
+  background-color: var(--bcolor);
+  
+  
+}
